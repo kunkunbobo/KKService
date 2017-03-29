@@ -14,3 +14,22 @@ CREATE TABLE `ENGINE`.`myUser`(
     `age` int(11) NULL,
      PRIMARY KEY (`ID`)
 ) DEFAULT CHARSET = utf8;
+
+
+-- ----------------------------
+--  Table structure for `CARINFO`
+-- ----------------------------
+CREATE TABLE `ENGINE`.`carInfo`(
+    `id` int(11) NOT NULL AUTO_INCREMENT,
+    `driver` varchar(50) NOT NULL,
+    `driverPhone` varchar(32) NOT NULL,
+    `driverName` VARCHAR(50) NULL,
+    `carType` int(11) NULL,
+    `seatNum` int(11) NULL,
+    `usedSeatNum` int(11) NULL,
+    `longitude` double NULL,
+    `latitude` double NULL,
+    `carNum` varchar(32)  NULL,
+    `updateDate` DATE NULL,
+     PRIMARY KEY (`id`)
+) DEFAULT CHARSET = utf8;

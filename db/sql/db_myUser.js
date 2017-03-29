@@ -31,8 +31,8 @@ export default {
         db: "write",
         sql: multiline(function () {
             /*
-             INSERT INTO `myUser`(`name`,`password`)
-             VALUES (@name,@password)
+             INSERT INTO `myUser`(`name`,`password,`type`)
+             VALUES (@name,@password,@type)
              */
         })
     },
